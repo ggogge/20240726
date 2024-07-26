@@ -52,7 +52,7 @@ data = pd.read_csv('별자리.csv')
 data['별자리'] = data['생년월일'].apply(lambda x: get_zodiac_sign(int(x.split('.')[2]), int(x.split('.')[1])))
 
 # 스트림릿 애플리케이션
-st.title("학생별 궁합 추천 및 조언 🎉")
+st.title("진접고112 별자리 궁합 🎉")
 
 selected_name = st.selectbox("학생 이름을 선택하세요", data['이름'])
 
