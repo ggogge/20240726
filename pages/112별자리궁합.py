@@ -46,7 +46,7 @@ zodiac_compatibility = {
 }
 
 # CSV 파일 읽기
-data = pd.read_csv('input.csv')
+data = pd.read_csv('별자리.csv')
 
 # 별자리 열 추가
 data['별자리'] = data['생년월일'].apply(lambda x: get_zodiac_sign(int(x.split('.')[2]), int(x.split('.')[1])))
